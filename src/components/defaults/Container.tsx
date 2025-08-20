@@ -4,6 +4,7 @@ import { useEffect, type FC } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./ScrolToTop";
+import StickyTopNav from "./StickyTopNav";
 
 const pageVariants = {
   hidden: { opacity: 0 },
@@ -24,17 +25,20 @@ const Container: FC<ContainerProps> = ({ children }) => {
 
   return (
     <AnimatePresence>
-      <ScrollToTop />
-      <motion.div
-        key={location.pathname}
-        variants={pageVariants}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        className="overflow-x-hidden"
-      >
-        {children}
-      </motion.div>
+      <div className="bg-[#EEF0F4] min-h-screen overflow-x-hidden">
+        <ScrollToTop />
+        <StickyTopNav />
+        <motion.div
+          key={location.pathname}
+          variants={pageVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="overflow-x-hidden"
+        >
+          {children}
+        </motion.div>
+      </div>
     </AnimatePresence>
   );
 };
