@@ -62,7 +62,7 @@ const Merit = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className={`${item.id % 2 === 0 ? "rounded-tr-2xl" : "rounded-tl-2xl"} w-[90%] h-[85%] `}
+                className={`${item.id % 2 === 0 ? "rounded-tr-2xl" : "rounded-tl-2xl"} w-[90%] h-[85%] object-cover`}
               />
             </div>
           </div>

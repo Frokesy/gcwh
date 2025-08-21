@@ -4,6 +4,7 @@ import Features from "../../components/home/Features";
 import Hero from "../../components/home/Hero";
 import Merit from "../../components/home/Merit";
 import Pricing from "../../components/home/Pricing";
+import ServerLocation from "../../components/home/ServerLocation";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Pricing />
       <Merit />
       <ComingSoon />
+      <ServerLocation />
     </Container>
   );
 };
