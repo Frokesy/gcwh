@@ -28,7 +28,7 @@ const Merit = () => {
     },
   ];
   return (
-    <div className="pt-20 bg-[#fff]">
+    <div className="py-20 bg-[#fff]">
       <div className="flex flex-col items-center justify-center  px-4 lg:px-0 space-y-3 text-center">
         <h2 className="lg:text-[48px] text-[24px] font-semibold text-gray-900">
           Why Choose Goatclouds hosting?
