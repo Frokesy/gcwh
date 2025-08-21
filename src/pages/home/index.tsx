@@ -1,4 +1,5 @@
 import Container from "../../components/defaults/Container";
+import Footer from "../../components/defaults/Footer";
 import ComingSoon from "../../components/home/ComingSoon";
 import Features from "../../components/home/Features";
 import Hero from "../../components/home/Hero";
@@ -17,6 +18,7 @@ const Home = () => {
       <ComingSoon />
       <ServerLocation />
       <Testimonials />
+      <Footer />
     </Container>
   );
 };

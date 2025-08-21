@@ -41,12 +41,12 @@ const Testimonials = () => {
         <h2 className="lg:text-[48px] text-[20px] text-center font-semibold">
           Trusted by thousands
         </h2>
-        <p className="lg:text-[20px]">
+        <p className="lg:text-[20px] text-center">
           See what our customers say about their experience with Goatcloud
           Hosting.
         </p>
 
-        <div className="mt-20 grid grid-cols-3 gap-20">
+        <div className="mt-20 grid lg:grid-cols-3 gap-20">
           {testimonialItems.map((item) => (
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="flex">
