@@ -1,6 +1,7 @@
 import Container from "../../components/defaults/Container";
 import Features from "../../components/home/Features";
 import Hero from "../../components/home/Hero";
+import Merit from "../../components/home/Merit";
 import Pricing from "../../components/home/Pricing";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Pricing />
+      <Merit />
     </Container>
   );
 };
