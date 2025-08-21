@@ -831,3 +831,140 @@ export const Australia = () => (
     </defs>
   </svg>
 );
+
+export const Star = () => (
+  <svg
+    width="20"
+    height="21"
+    viewBox="0 0 20 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_227_13679)">
+      <g clipPath="url(#clip1_227_13679)">
+        <path
+          d="M9.99999 1.76025L12.575 6.97692L18.3333 7.81859L14.1667 11.8769L15.15 17.6103L9.99999 14.9019L4.84999 17.6103L5.83332 11.8769L1.66666 7.81859L7.42499 6.97692L9.99999 1.76025Z"
+          fill="#EAAA08"
+          stroke="#EAAA08"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_227_13679">
+        <rect
+          width="20"
+          height="20"
+          fill="white"
+          transform="translate(0 0.09375)"
+        />
+      </clipPath>
+      <clipPath id="clip1_227_13679">
+        <rect
+          width="20"
+          height="20"
+          fill="white"
+          transform="translate(0 0.09375)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const TestAuthorOne = () => (
+  <svg
+    width="40"
+    height="41"
+    viewBox="0 0 40 41"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 20.0938C0 9.04806 8.95431 0.09375 20 0.09375C31.0457 0.09375 40 9.04806 40 20.0938C40 31.1394 31.0457 40.0938 20 40.0938C8.95431 40.0938 0 31.1394 0 20.0938Z"
+      fill="url(#paint0_linear_227_13697)"
+    />
+    <path
+      d="M22.8898 25.5938L22.0578 22.8737H17.8978L17.0658 25.5938H14.4578L18.4898 14.1217H21.4498L25.4978 25.5938H22.8898ZM20.6498 18.1857C20.5965 18.0044 20.5272 17.7751 20.4418 17.4977C20.3565 17.2204 20.2712 16.9377 20.1858 16.6497C20.1005 16.3617 20.0312 16.1111 19.9778 15.8977C19.9245 16.1111 19.8498 16.3777 19.7538 16.6977C19.6685 17.0071 19.5832 17.3057 19.4978 17.5938C19.4232 17.8711 19.3645 18.0684 19.3218 18.1857L18.5058 20.8417H21.4818L20.6498 18.1857Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_227_13697"
+        x1="0"
+        y1="20.0938"
+        x2="40"
+        y2="20.0938"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#1A2E6C" />
+        <stop offset="1" stopColor="#0B132D" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const TestAuthorTwo = () => (
+  <svg
+    width="40"
+    height="41"
+    viewBox="0 0 40 41"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 20.0938C0 9.04806 8.95431 0.09375 20 0.09375C31.0457 0.09375 40 9.04806 40 20.0938C40 31.1394 31.0457 40.0938 20 40.0938C8.95431 40.0938 0 31.1394 0 20.0938Z"
+      fill="url(#paint0_linear_227_13724)"
+    />
+    <path
+      d="M25.2381 25.5938H22.4861L19.4941 20.7777L18.4701 21.5137V25.5938H16.0541V14.1697H18.4701V19.4017C18.6301 19.1777 18.7901 18.9537 18.9501 18.7297C19.1101 18.5057 19.2701 18.2817 19.4301 18.0577L22.5181 14.1697H25.2061L21.2221 19.2257L25.2381 25.5938Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_227_13724"
+        x1="0"
+        y1="20.0938"
+        x2="40"
+        y2="20.0938"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#1A2E6C" />
+        <stop offset="1" stopColor="#0B132D" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const TestAuthorThree = () => (
+  <svg
+    width="40"
+    height="41"
+    viewBox="0 0 40 41"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 20.0938C0 9.04806 8.95431 0.09375 20 0.09375C31.0457 0.09375 40 9.04806 40 20.0938C40 31.1394 31.0457 40.0938 20 40.0938C8.95431 40.0938 0 31.1394 0 20.0938Z"
+      fill="url(#paint0_linear_227_13751)"
+    />
+    <path
+      d="M16.9525 25.5938V14.1697H19.3685V23.5938H24.0085V25.5938H16.9525Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_227_13751"
+        x1="0"
+        y1="20.0938"
+        x2="40"
+        y2="20.0938"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#1A2E6C" />
+        <stop offset="1" stopColor="#0B132D" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
