@@ -7,6 +7,7 @@ import LinuxVPSHosting from "./pages/servers/linux-vps-hosting";
 import LinuxVDSServer from "./pages/servers/linux-vds-server";
 import WindowsCloudsServer from "./pages/servers/windows-clouds-server";
 import WindowsVDSServer from "./pages/servers/windows-vds-server";
+import ManagedVPSServer from "./pages/servers/managed-vps-server";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const App = () => {
     { path: "/servers/linux-vds-server", element: <LinuxVDSServer /> },
     { path: "/servers/windows-cloud-server", element: <WindowsCloudsServer /> },
     { path: "/servers/windows-vds-server", element: <WindowsVDSServer /> },
+    { path: "/servers/managed-vps-server", element: <ManagedVPSServer /> },
   ]);
 
   return (
