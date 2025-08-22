@@ -1,5 +1,6 @@
 import PricingCard from "../../../components/cards/PricingCard";
 import Container from "../../../components/defaults/Container";
+import FAQs from "../../../components/defaults/FAQs";
 import ServerLocation from "../../../components/home/ServerLocation";
 import Testimonials from "../../../components/home/Testimonials";
 import {
@@ -154,6 +155,7 @@ const DedicatedServers = () => {
       </div>
       <ServerLocation />
       <Testimonials />
+      <FAQs />
     </Container>
   );
 };
