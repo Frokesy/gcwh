@@ -10,11 +10,11 @@ import {
   RightArrow,
 } from "../../../components/svgs/Icons";
 
-const LinuxVPSHosting = () => {
+const WindowsVDSServer = () => {
   const items = [
-    "Supports Debian, Ubuntu and Almalinux",
-    "Fast, Reliable SSDs and unlimited traffic",
-    "Rest assured with our 99.9% uptime promise and top rated support",
+    "Scale with ease: Powerful performance and expandable resources",
+    "Transparent pricing",
+    "High-availability architecture",
   ];
   return (
     <Container>
@@ -23,16 +23,17 @@ const LinuxVPSHosting = () => {
           <div className="lg:w-[50%]">
             <div className="flex">
               <div className="bg-[#12214D] text-[#fff] font-semibold py-2 px-4 rounded-full">
-                <span>Linux VPS hosting</span>
+                <span>Windows VDS server</span>
               </div>
             </div>
             <h2 className="text-gray-900 lg:text-[60px] text-[30px] mt-3 font-semibold">
-              Open-source power, your way
+              Power, Control, and Flexibility in One
             </h2>
             <p className="lg:text-[20px] text-[14px] text-gray-900 w-[90%] mt-2">
-              A Linux VPS gives you flexibility, performance, and security with
-              full root access. Ideal for developers and businesses who prefer
-              the stability and customizability of Linux-based hosting.
+              A Windows VDS gives you dedicated resources on a virtual Windows
+              server, combining power and flexibility. Run Windows apps, host
+              websites, and manage workloads with ease. Enjoy full admin access,
+              scalability, and strong security for reliable performance.
             </p>
 
             <div className="mt-4 bg-[#fff] lg:p-6 p-3 rounded-2xl grid gap-6 lg:gap-10 w-[100%]">
@@ -71,7 +72,7 @@ const LinuxVPSHosting = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/gifs/linux.gif" alt="linux" />
+            <img src="/assets/gifs/windows.gif" alt="windows" />
           </div>
         </div>
       </div>
@@ -79,14 +80,14 @@ const LinuxVPSHosting = () => {
       <div className="bg-[#fff] py-20">
         <div className="flex items-center justify-center">
           <div className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full">
-            <span>Linux virtual server plans & prices</span>
+            <span>Windows VDS server plans & prices</span>
           </div>
         </div>
 
         <div className="lg:w-[90vw] w-[95vw] mx-auto border border-[#ccc] rounded-3xl mt-10 py-6 px-3 lg:px-16">
           <div className="flex lg:flex-row flex-col items-center justify-between">
             <h2 className="lg:text-[30px] text-[18px] font-semibold mt-2 text-[#1A2E6C]">
-              Linux virtual server plans & prices
+              Windows VDS server plans & prices
             </h2>
             <div className="flex items-center space-x-4 mt-3 lg:mt-0 lg:space-x-10">
               <LeftArrow />
@@ -96,81 +97,60 @@ const LinuxVPSHosting = () => {
 
           <div className="mt-4 grid lg:grid-cols-3 grid-cols-1 w-[100%] gap-6">
             <PricingCard
-              type="C1 Server"
-              desc="Supermicro Server"
+              type="Windows VDS Starter"
+              desc=""
               price="$2.99"
               benefits={[
-                "1 vCPU Core",
-                "1GB DDA RAM",
-                "20GB NVMe SSD Storage",
-                "Unlimited Traffic",
-                "1 Static IPv4 address",
-                "Web-based console",
-                "Instant setup",
-                "DNS & RDNS control",
-                "Ubuntu, Debian, Almalinux",
-                "Flexible solutions",
-                "Fast & expert support",
-                "SSH & root access",
-                "VLAN support",
+                "3 vCore Intel Xeon CPU",
+                "24GB RAM",
+                "450GB NVMe SSD Storage",
+                "Unlimited Bandwidth",
+                "Latest windows server",
+                "2 RDP licenses included",
+                "Full DNS & RDNS control",
+                "Free static IP address",
                 "KVM virtualization",
-                "Linux OS support",
-                "Locally hosted",
-                "24/7 monitoring",
-                "Cancel anytime",
+                "Dedicated resources",
+                "Optional backup plans",
                 "99% uptime guaranteed",
               ]}
             />
             <PricingCard
-              type="C2 Server"
-              desc="Dell Server"
+              type="Windows VDS Basic"
+              desc=""
               price="$5.99"
               mostPopular
               benefits={[
-                "1 vCPU Core",
-                "2GB DDA RAM",
-                "50GB NVMe SSD Storage",
-                "Unlimited Traffic",
-                "1 Static IPv4 address",
-                "Web-based console",
-                "Instant setup",
-                "DNS & RDNS control",
-                "Ubuntu, Debian, Almalinux",
-                "Flexible solutions",
-                "Fast & expert support",
-                "SSH & root access",
-                "VLAN support",
+                "4 vCore Intel Xeon CPU",
+                "32GB RAM",
+                "600GB NVMe SSD Storage",
+                "Unlimited Bandwidth",
+                "Latest windows server",
+                "2 RDP licenses included",
+                "Full DNS & RDNS control",
+                "Free static IP address",
                 "KVM virtualization",
-                "Linux OS support",
-                "Locally hosted",
-                "24/7 monitoring",
-                "Cancel anytime",
+                "Dedicated resources",
+                "Optional backup plans",
                 "99% uptime guaranteed",
               ]}
             />
             <PricingCard
-              type="C3 Server"
-              desc="Dell Server"
+              type="Windows VDS Premium"
+              desc=""
               price="$9.99"
               benefits={[
-                "2 vCPU Core",
-                "2GB DDA RAM",
-                "80GB NVMe SSD Storage",
-                "Unlimited Traffic",
-                "1 Static IPv4 address",
-                "Web-based console",
-                "Instant setup",
-                "DNS & RDNS control",
-                "Ubuntu, Debian, Almalinux",
-                "Flexible solutions",
-                "Fast & expert support",
-                "SSH & root access",
-                "VLAN support",
+                "6 vCore Intel Xeon CPU",
+                "48GB RAM",
+                "900GB NVMe SSD Storage",
+                "Unlimited Bandwidth",
+                "Latest windows server",
+                "2 RDP licenses included",
+                "Full DNS & RDNS control",
+                "Free static IP address",
                 "KVM virtualization",
-                "Linux OS support",
-                "Locally hosted",
-                "24/7 monitoring",
-                "Cancel anytime",
+                "Dedicated resources",
+                "Optional backup plans",
                 "99% uptime guaranteed",
               ]}
             />
@@ -185,4 +165,4 @@ const LinuxVPSHosting = () => {
   );
 };
 
-export default LinuxVPSHosting;
+export default WindowsVDSServer;

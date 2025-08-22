@@ -20,7 +20,7 @@ const LinuxVDSServer = () => {
     <Container>
       <div className="bg-[url('/assets/bg-gradient.svg')] mt-10 bg-cover lg:pt-[15vh] pt-20 bg-no-repeat min-h-screen">
         <div className="w-[90vw] mx-auto flex justify-between lg:flex-row flex-col">
-          <div className="lg:w-[45%]">
+          <div className="lg:w-[50%]">
             <div className="flex">
               <div className="bg-[#12214D] text-[#fff] font-semibold py-2 px-4 rounded-full">
                 <span>Linux VDS server</span>
