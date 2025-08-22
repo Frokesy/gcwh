@@ -33,7 +33,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="py-20 bg-[#fff]">
+    <div className="lg:py-20 py-10 bg-[#fff]">
       <div className="mt-10 w-[90vw] mx-auto py-10 flex flex-col space-y-3 items-center justify-center">
         <div className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full">
           <span>Testimonials</span>
@@ -48,7 +48,10 @@ const Testimonials = () => {
 
         <div className="mt-20 grid lg:grid-cols-3 gap-20">
           {testimonialItems.map((item) => (
-            <div className="flex flex-col items-center text-center space-y-6">
+            <div
+              key={item.id}
+              className="flex flex-col items-center text-center space-y-6"
+            >
               <div className="flex">
                 <Star />
                 <Star />

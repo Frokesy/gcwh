@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative mt-20 scrollbar-hide w-[95vw] mx-auto py-6 px-10 rounded-full bg-[#fff] overflow-x-auto">
+      <div className="relative mt-20 scrollbar-hide w-[95vw] mx-auto lg:text-[16px] text-[14px] py-3 lg:py-6 px-10 rounded-full bg-[#fff] overflow-x-auto">
         <div className="flex space-x-10 animate-marquee">
           {bottomBarItems.concat(bottomBarItems).map((item, index) => (
             <div key={index} className="flex items-center space-x-3 min-w-max">
