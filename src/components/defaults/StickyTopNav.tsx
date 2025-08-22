@@ -14,7 +14,7 @@ const StickyTopNav = () => {
 
   return (
     <div className="fixed w-full z-50">
-      <div className="w-[90vw] mx-auto bg-[#fff] px-6 lg:px-10 lg:py-4 py-3 flex items-center justify-between rounded-full shadow-lg mt-6">
+      <div className="lg:w-[90vw] mx-auto bg-[#fff] px-6 lg:px-10 lg:py-4 py-3 flex items-center justify-between lg:rounded-full shadow-lg lg:mt-6">
         <div className="flex items-center space-x-2 lg:space-x-3">
           <img
             src="/assets/logo.svg"
