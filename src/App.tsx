@@ -2,11 +2,15 @@ import { AnimatePresence } from "framer-motion";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home";
 import BuildWebsite from "./pages/build-website";
+import DedicatedServers from "./pages/servers/dedicated-servers";
 
 const App = () => {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/build-website", element: <BuildWebsite /> },
+
+    //server routes
+    { path: "/servers/dedicated-servers", element: <DedicatedServers /> },
   ]);
 
   return (

@@ -1066,3 +1066,192 @@ export const GitHub = () => (
     </defs>
   </svg>
 );
+
+export const LeftArrow = () => (
+  <svg
+    width="88"
+    height="88"
+    viewBox="0 0 88 88"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g filter="url(#filter0_dd_109_3939)">
+      <rect
+        width="32"
+        height="32"
+        rx="16"
+        transform="matrix(-1 0 0 1 60 12)"
+        fill="white"
+        shapeRendering="crispEdges"
+      />
+      <path
+        d="M46.6665 22.6667C46.6665 22.6667 41.3332 26.5947 41.3332 28.0001C41.3332 29.4055 46.6665 33.3334 46.6665 33.3334"
+        stroke="#141B34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_dd_109_3939"
+        x="0"
+        y="0"
+        width="88"
+        height="88"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feMorphology
+          radius="4"
+          operator="erode"
+          in="SourceAlpha"
+          result="effect1_dropShadow_109_3939"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0470588 0 0 0 0 0.0470588 0 0 0 0 0.0509804 0 0 0 0.05 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_109_3939"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feMorphology
+          radius="4"
+          operator="erode"
+          in="SourceAlpha"
+          result="effect2_dropShadow_109_3939"
+        />
+        <feOffset dy="16" />
+        <feGaussianBlur stdDeviation="16" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0470588 0 0 0 0 0.0470588 0 0 0 0 0.0509804 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_dropShadow_109_3939"
+          result="effect2_dropShadow_109_3939"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect2_dropShadow_109_3939"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const RightArrow = () => (
+  <svg
+    width="88"
+    height="88"
+    viewBox="0 0 88 88"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g filter="url(#filter0_dd_109_3934)">
+      <rect
+        x="28"
+        y="12"
+        width="32"
+        height="32"
+        rx="16"
+        fill="white"
+        shapeRendering="crispEdges"
+      />
+      <path
+        d="M41.3335 22.6667C41.3335 22.6667 46.6668 26.5946 46.6668 28.0001C46.6668 29.4055 41.3335 33.3334 41.3335 33.3334"
+        stroke="#141B34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_dd_109_3934"
+        x="0"
+        y="0"
+        width="88"
+        height="88"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feMorphology
+          radius="4"
+          operator="erode"
+          in="SourceAlpha"
+          result="effect1_dropShadow_109_3934"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0470588 0 0 0 0 0.0470588 0 0 0 0 0.0509804 0 0 0 0.05 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_109_3934"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feMorphology
+          radius="4"
+          operator="erode"
+          in="SourceAlpha"
+          result="effect2_dropShadow_109_3934"
+        />
+        <feOffset dy="16" />
+        <feGaussianBlur stdDeviation="16" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0470588 0 0 0 0 0.0470588 0 0 0 0 0.0509804 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_dropShadow_109_3934"
+          result="effect2_dropShadow_109_3934"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect2_dropShadow_109_3934"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
