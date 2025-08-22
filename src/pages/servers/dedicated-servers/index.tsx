@@ -1,6 +1,7 @@
 import PricingCard from "../../../components/cards/PricingCard";
 import Container from "../../../components/defaults/Container";
 import FAQs from "../../../components/defaults/FAQs";
+import Footer from "../../../components/defaults/Footer";
 import ServerLocation from "../../../components/home/ServerLocation";
 import Testimonials from "../../../components/home/Testimonials";
 import {
@@ -37,20 +38,20 @@ const DedicatedServers = () => {
               <span>Dedicated server</span>
             </div>
           </div>
-          <h2 className="text-gray-900 text-[60px] mt-6 font-semibold">
+          <h2 className="text-gray-900 lg:text-[60px] text-[30px] mt-6 font-semibold">
             Power and control, all yours.
           </h2>
-          <p className="text-[20px] text-gray-900 w-[90%] mt-6">
+          <p className="lg:text-[20px] text-[14px] text-gray-900 w-[90%] mt-6">
             A dedicated server gives you full control and exclusive resources
             for maximum performance, security, and reliability—perfect for
             high-traffic sites and demanding applications.
           </p>
 
-          <div className="mt-10 bg-[#fff] p-6 rounded-2xl grid grid-cols-4 gap-10 w-[100%]">
+          <div className="mt-10 bg-[#fff] p-6 rounded-2xl grid lg:grid-cols-4 gap-6 lg:gap-10 w-[100%]">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-3 min-w-max"
+                className="flex items-center space-x-3 lg:text-[16px] text-[14px] min-w-max"
               >
                 <GreenTick />
                 <p>{item}</p>
@@ -58,7 +59,7 @@ const DedicatedServers = () => {
             ))}
           </div>
 
-          <div className="flex space-x-10 mt-10">
+          <div className="flex lg:flex-row flex-col space-y-6 lg:space-y-0 lg:space-x-10 mt-10">
             <div className="flex items-center space-x-2">
               <p className="text-[18px] text-gray-800">Starting from</p>
               <div className="flex items-baseline">
@@ -66,16 +67,16 @@ const DedicatedServers = () => {
                 <span className="text-[12px]">/mo</span>
               </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <button className="bg-[#182A62] text-white px-20 py-2 text-[16px] font-semibold rounded-lg">
+            <div className="flex items-center lg:space-x-4 space-y-3 lg:space-y-0 lg:flex-row flex-col">
+              <button className="bg-[#182A62] text-white px-20 py-2 text-[16px] lg:w-auto w-[100%] font-semibold rounded-lg">
                 View all plans
               </button>
-              <button className="text-[#182A62] bg-white px-20 py-2 text-[16px] font-semibold rounded-lg">
+              <button className="text-[#182A62] bg-white px-20 py-2 text-[16px] lg:w-auto w-[100%] font-semibold rounded-lg">
                 Choose your plans
               </button>
             </div>
           </div>
-          <div className="flex items-center space-x-3 mt-6 min-w-max">
+          <div className="flex items-center space-x-3 mt-6 min-w-max lg:mb-0 mb-10">
             <GreenTick />
             <p>30-Day Money Back Guarantee</p>
           </div>
@@ -89,12 +90,12 @@ const DedicatedServers = () => {
           </div>
         </div>
 
-        <div className="w-[90vw] mx-auto border border-[#ccc] rounded-3xl mt-10 py-6 px-16">
-          <div className="flex justify-between">
-            <h2 className="text-[30px] font-semibold mt-2 text-[#1A2E6C]">
+        <div className="lg:w-[90vw] w-[95vw] mx-auto border border-[#ccc] rounded-3xl mt-10 py-6 px-3 lg:px-16">
+          <div className="flex lg:flex-row flex-col items-center justify-between">
+            <h2 className="lg:text-[30px] text-[18px] font-semibold mt-2 text-[#1A2E6C]">
               Self-managed server prices
             </h2>
-            <div className="flex items-center space-x-10">
+            <div className="flex items-center space-x-4 mt-3 lg:mt-0 lg:space-x-10">
               <LeftArrow />
               <RightArrow />
             </div>
@@ -156,6 +157,7 @@ const DedicatedServers = () => {
       <ServerLocation />
       <Testimonials />
       <FAQs />
+      <Footer />
     </Container>
   );
 };
