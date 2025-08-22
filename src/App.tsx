@@ -10,6 +10,7 @@ import WindowsVDSServer from "./pages/servers/windows-vds-server";
 import ManagedVPSServer from "./pages/servers/managed-vps-server";
 import WebHosting from "./pages/hosting/web-hosting";
 import EmailHosting from "./pages/hosting/email-hosting";
+import WordpressHosting from "./pages/hosting/wordpress-hosting";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -27,6 +28,7 @@ const App = () => {
     //hosting routes
     { path: "/hosting/web-hosting", element: <WebHosting /> },
     { path: "/hosting/email-hosting", element: <EmailHosting /> },
+    { path: "/hosting/wordpress-hosting", element: <WordpressHosting /> },
   ]);
 
   return (
