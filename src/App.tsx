@@ -8,6 +8,8 @@ import LinuxVDSServer from "./pages/servers/linux-vds-server";
 import WindowsCloudsServer from "./pages/servers/windows-clouds-server";
 import WindowsVDSServer from "./pages/servers/windows-vds-server";
 import ManagedVPSServer from "./pages/servers/managed-vps-server";
+import WebHosting from "./pages/hosting/web-hosting";
+import EmailHosting from "./pages/hosting/email-hosting";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -21,6 +23,10 @@ const App = () => {
     { path: "/servers/windows-cloud-server", element: <WindowsCloudsServer /> },
     { path: "/servers/windows-vds-server", element: <WindowsVDSServer /> },
     { path: "/servers/managed-vps-server", element: <ManagedVPSServer /> },
+
+    //hosting routes
+    { path: "/hosting/web-hosting", element: <WebHosting /> },
+    { path: "/hosting/email-hosting", element: <EmailHosting /> },
   ]);
 
   return (
