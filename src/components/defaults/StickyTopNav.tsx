@@ -1,17 +1,23 @@
 import { NavLink } from "react-router-dom";
-import { HamburgerIcon } from "../svgs/Icons";
+import { CaretDown, HamburgerIcon } from "../svgs/Icons";
+import { useState } from "react";
+import ServersDropdown from "../dropdowns/ServersDropdown";
 
 const StickyTopNav = () => {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
   const navItems = [
     { label: "Build website", href: "/build-website" },
-    { label: "Services" },
+    { label: "Servers" },
     { label: "Hosting" },
     { label: "Domain" },
     { label: "Cart", href: "/cart" },
     { label: "Log in", href: "/login" },
     { label: "Sign up", href: "/signup", button: true },
   ];
-
+  const toggleDropdown = (label: string) => {
+    setActiveDropdown((prev) => (prev === label ? null : label));
+  };
   return (
     <div className="fixed w-full z-50">
       <div className="lg:w-[90vw] mx-auto bg-[#fff] px-6 lg:px-10 lg:py-4 py-3 flex items-center justify-between lg:rounded-full shadow-lg lg:mt-6">
@@ -53,9 +59,19 @@ const StickyTopNav = () => {
             }
 
             return (
-              <button key={index} className="text-[#667085] text-[16px]">
-                {item.label}
-              </button>
+              <div className="">
+                <button
+                  key={index}
+                  onClick={() => toggleDropdown(item.label)}
+                  className="text-[#667085] text-[16px] flex items-center cursor-pointer space-x-3"
+                >
+                  <span>{item.label}</span>
+                  <CaretDown />
+                </button>
+                {item.label === "Servers" && activeDropdown === "Servers" && (
+                  <ServersDropdown />
+                )}
+              </div>
             );
           })}
         </div>
