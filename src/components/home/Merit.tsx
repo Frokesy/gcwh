@@ -30,10 +30,13 @@ const Merit = () => {
   return (
     <div className="py-20 bg-[#fff]">
       <div className="flex flex-col items-center justify-center  px-4 lg:px-0 space-y-3 text-center">
-        <h2 className="lg:text-[48px] text-[24px] font-semibold text-gray-900">
+        <h2
+          data-aos="fade-down"
+          className="lg:text-[48px] text-[24px] font-semibold text-gray-900"
+        >
           Why Choose Goatclouds hosting?
         </h2>
-        <p className="lg:text-[20px] text-[#667085]">
+        <p data-aos="fade-up" className="lg:text-[20px] text-[#667085]">
           Join thousands of satisfied customers who trust us with their online
           presence.
         </p>
@@ -45,7 +48,10 @@ const Merit = () => {
             key={item.id}
             className={`${item.id % 2 === 0 ? "lg:flex-row-reverse flex-col" : "lg:flex-row flex-col"} flex justify-between items-center`}
           >
-            <div className="flex flex-col space-y-4 lg:w-[50%] lg:px-20 pl-4">
+            <div
+              data-aos="fade-down"
+              className="flex flex-col space-y-4 lg:w-[50%] lg:px-20 pl-4"
+            >
               <div className="">{item.icon}</div>
               <h2 className="text-gray-900 text-[18px] lg:text-[30px] font-semibold">
                 {item.title}
@@ -60,6 +66,7 @@ const Merit = () => {
               style={{ backgroundColor: item.imgTheme }}
             >
               <img
+                data-aos={`${item.id % 2 === 0 ? "fade-right" : "fade-left"}`}
                 src={item.img}
                 alt={item.title}
                 className={`${item.id % 2 === 0 ? "rounded-tr-2xl" : "rounded-tl-2xl"} w-[90%] h-[85%] object-cover`}

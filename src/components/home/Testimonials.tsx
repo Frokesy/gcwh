@@ -35,13 +35,19 @@ const Testimonials = () => {
   return (
     <div className="lg:py-20 py-10 bg-[#fff]">
       <div className="mt-10 w-[90vw] mx-auto flex flex-col space-y-3 items-center justify-center">
-        <div className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full">
+        <div
+          data-aos="fade-down"
+          className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full"
+        >
           <span>Testimonials</span>
         </div>
-        <h2 className="lg:text-[48px] text-[20px] text-center font-semibold">
+        <h2
+          data-aos="fade-down"
+          className="lg:text-[48px] text-[20px] text-center font-semibold"
+        >
           Trusted by thousands
         </h2>
-        <p className="lg:text-[20px] text-center">
+        <p data-aos="fade-up" className="lg:text-[20px] text-center">
           See what our customers say about their experience with Goatcloud
           Hosting.
         </p>
@@ -50,6 +56,7 @@ const Testimonials = () => {
           {testimonialItems.map((item) => (
             <div
               key={item.id}
+              data-aos="fade-up"
               className="flex flex-col items-center text-center space-y-6"
             >
               <div className="flex">

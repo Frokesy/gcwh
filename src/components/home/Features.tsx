@@ -39,13 +39,19 @@ const Features = () => {
   return (
     <div className="bg-[#fff] text-[#101828]">
       <div className="mt-10 w-[90vw] mx-auto py-20 flex flex-col lg:space-y-6 space-y-3 items-center justify-center">
-        <div className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full">
+        <div
+          data-aos="fade-down"
+          className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full"
+        >
           <span>Features</span>
         </div>
-        <h2 className="lg:text-[48px] text-[20px] text-center font-semibold">
+        <h2
+          data-aos="fade-up"
+          className="lg:text-[48px] text-[20px] text-center font-semibold"
+        >
           Everything you need to success online
         </h2>
-        <p className="lg:text-[20px]">
+        <p data-aos="fade-up" className="lg:text-[20px]">
           From hosting to domains, we've got you covered with enterprise-grade
           features at affordable prices.
         </p>
@@ -55,6 +61,8 @@ const Features = () => {
             <div
               className="p-6 rounded-lg flex flex-col items-center justify-center"
               key={item.id}
+              data-aos="fade-up"
+              data-aos-duration={item.id + 1200}
               style={{ backgroundColor: item.bgColor }}
             >
               <div className="">{item.icon}</div>

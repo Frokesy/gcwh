@@ -37,10 +37,13 @@ const ServerLocation = () => {
     <div className="bg-[#fff] lg:py-20 py-10">
       <div className=" w-[90vw] mx-auto">
         <div className="flex flex-col items-center justify-center  px-4 lg:px-0 space-y-3 text-center">
-          <h2 className="lg:text-[48px] text-[24px] font-semibold text-gray-900">
+          <h2
+            data-aos="fade-down"
+            className="lg:text-[48px] text-[24px] font-semibold text-gray-900"
+          >
             Server Location
           </h2>
-          <p className="lg:text-[20px] text-[#667085]">
+          <p data-aos="fade-up" className="lg:text-[20px] text-[#667085]">
             See where our servers are strategically located to deliver fast,
             secure, and reliable connections—no matter where your visitors are.
           </p>
@@ -58,6 +61,8 @@ const ServerLocation = () => {
           {locationItems.map((item) => (
             <div
               key={item.id}
+              data-aos="fade-up"
+              data-aos-duration={item.id + 1500}
               className="flex flex-col items-center text-center"
             >
               <div className="">{item.icon}</div>

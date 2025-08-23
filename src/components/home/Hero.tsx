@@ -17,16 +17,22 @@ const Hero = () => {
     <div className="bg-[url('/assets/bg-gradient.svg')] mt-10 bg-cover lg:pt-[15vh] pt-20 bg-no-repeat min-h-screen">
       <div className="text-gray-900 flex lg:flex-row flex-col justify-between w-[90vw] mx-auto">
         <div className="lg:w-[45%] flex flex-col space-y-4">
-          <h2 className="lg:text-[60px] text-[30px] font-semibold">
+          <h2
+            data-aos="fade-down"
+            className="lg:text-[60px] text-[30px] font-semibold"
+          >
             Do you need a website or app for your{" "}
             <span className="text-[#003EFF]">product?</span>
           </h2>
-          <p className="text-gray-900 lg:text-[20px]">
+          <p data-aos="fade-down" className="text-gray-900 lg:text-[20px]">
             We create fast, user-friendly digital solutions tailored to your
             brand and goals.
           </p>
 
-          <div className="lg:mt-10 mt-4 bg-[#fff] rounded-2xl border border-[#ccc] p-4 lg:p-6 w-full">
+          <div
+            data-aos="fade-up"
+            className="lg:mt-10 mt-4 bg-[#fff] rounded-2xl border border-[#ccc] p-4 lg:p-6 w-full"
+          >
             <h2 className="text-[14px] text-gray-900">
               Give us information on what you want to build and we&apos;ll give
               you a call!
@@ -61,7 +67,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-[45%] lg:mt-0 mt-10">
+        <div data-aos="fade-left" className="lg:w-[45%] lg:mt-0 mt-10">
           <img
             src="/assets/hero-img.png"
             alt="hero-img"
