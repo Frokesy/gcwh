@@ -16,11 +16,13 @@ import RegisterDomain from "./pages/domains/register";
 import TransferDomain from "./pages/domains/transfer";
 import WhoisLookup from "./pages/domains/whois-lookup";
 import DomainPrices from "./pages/domains/prices";
+import Cart from "./pages/cart";
 
 const App = () => {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/build-website", element: <BuildWebsite /> },
+    { path: "/cart", element: <Cart /> },
 
     //server routes
     { path: "/servers/dedicated-servers", element: <DedicatedServers /> },
