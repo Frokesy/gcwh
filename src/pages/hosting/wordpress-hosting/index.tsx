@@ -162,7 +162,59 @@ const WordpressHosting = () => {
       </div>
       <ServerLocation />
       <Testimonials />
-      <FAQs />
+      <FAQs
+        page="Wordpress hosting"
+        questions={[
+          {
+            id: 1,
+            question: "What is a Windows cloud server?",
+            answer:
+              "A Windows cloud server is a virtual server hosted in the cloud that runs on the Windows Server operating system. It gives you scalable resources, high availability, and the flexibility to run Windows-based applications, software, and databases without the need for physical hardware.",
+          },
+          {
+            id: 2,
+            question: "What are the benefits of using a Windows cloud?",
+            answer:
+              "Windows cloud servers offer several benefits, including easy scalability of resources, high uptime, strong integration with Microsoft tools (like Active Directory, .NET, and SQL Server), and remote accessibility. They are cost-effective since you only pay for the resources you use.",
+          },
+          {
+            id: 3,
+            question: "Who should use a Windows cloud server?",
+            answer:
+              "Windows cloud servers are ideal for businesses and developers who rely on Windows applications, .NET frameworks, Microsoft SQL databases, or need seamless integration with Microsoft 365 and Azure services. They are also great for organizations needing a familiar Windows environment for their teams.",
+          },
+          {
+            id: 4,
+            question: "Can I upgrade my resources later?",
+            answer:
+              "Yes. You can easily scale your Windows cloud server resources such as CPU, RAM, and storage at any time. Upgrades are seamless and typically don’t require downtime, so your server grows with your business needs.",
+          },
+          {
+            id: 5,
+            question: "Do I get administrator access?",
+            answer:
+              "Yes. Every Windows cloud server comes with full administrator (RDP) access, giving you complete control over the operating system, software installations, configurations, and security settings.",
+          },
+          {
+            id: 6,
+            question: "What versions of Windows are available?",
+            answer:
+              "We support multiple versions of Windows Server, including Windows Server 2016, 2019, and 2022. You can choose the version that best matches your software requirements and compatibility needs.",
+          },
+          {
+            id: 7,
+            question: "How reliable is the uptime?",
+            answer:
+              "Our Windows cloud servers come with a 99.9% uptime guarantee, backed by enterprise-grade infrastructure, redundant power, and network systems to ensure your applications and services stay online.",
+          },
+          {
+            id: 8,
+            question: "Do you provide technical support?",
+            answer:
+              "Yes. Our support team is available to help you with setup, configuration, troubleshooting, and general technical issues. Managed support plans are also available if you prefer us to handle server maintenance and monitoring.",
+          },
+        ]}
+      />
       <Footer />
     </Container>
   );

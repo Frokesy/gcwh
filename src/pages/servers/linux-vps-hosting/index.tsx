@@ -183,7 +183,53 @@ const LinuxVPSHosting = () => {
       </div>
       <ServerLocation />
       <Testimonials />
-      <FAQs />
+      <FAQs
+        page="Linux VPS hosting"
+        questions={[
+          {
+            id: 1,
+            question: "What is Linux VPS hosting?",
+            answer:
+              "Linux VPS (Virtual Private Server) hosting is a hosting environment where a physical server is divided into multiple virtual servers, each with its own dedicated resources like CPU, RAM, and storage. It runs on Linux distributions, giving you stability, security, and flexibility at a lower cost than a dedicated server.",
+          },
+          {
+            id: 2,
+            question: "Who should use Linux VPS hosting?",
+            answer:
+              "Linux VPS hosting is ideal for developers, small-to-medium businesses, e-commerce sites, or anyone needing more control, reliability, and scalability than shared hosting. It’s also great for running custom applications or websites with growing traffic.",
+          },
+          {
+            id: 3,
+            question: "Which Linux distributions are supported?",
+            answer:
+              "Most popular Linux distributions are supported, including Ubuntu, CentOS, Debian, Fedora, and AlmaLinux. You can choose the distribution that best matches your technical expertise and project requirements.",
+          },
+          {
+            id: 4,
+            question: "Can I upgrade my Linux VPS server later?",
+            answer:
+              "Yes. You can easily upgrade your VPS resources (CPU, RAM, storage, or bandwidth) without downtime. This ensures your server grows with your business needs.",
+          },
+          {
+            id: 5,
+            question: "Is Linux VPS hosting secure?",
+            answer:
+              "Yes. Linux is well-known for its strong security model. We also provide additional protections such as firewalls, DDoS mitigation, SSL certificates, and regular security updates to keep your VPS secure.",
+          },
+          {
+            id: 6,
+            question: "Do I need skills to manage it?",
+            answer:
+              "Basic Linux knowledge helps, but it depends on the plan you choose. With an unmanaged VPS, you’ll handle server setup, updates, and security. With a managed VPS, our team takes care of technical management so you can focus on your website or app.",
+          },
+          {
+            id: 7,
+            question: "Is Linux VPS hosting better than shared hosting?",
+            answer:
+              "Yes. Unlike shared hosting where resources are shared among many users, a VPS gives you dedicated resources and root access. This means better performance, improved security, and more flexibility to install and configure software as you need.",
+          },
+        ]}
+      />
       <Footer />
     </Container>
   );

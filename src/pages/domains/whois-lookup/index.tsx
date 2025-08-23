@@ -54,7 +54,72 @@ const WhoisLookup = () => {
       <DomainExtensionPricing />
       <Qualifications />
       <Testimonials />
-      <FAQs />
+      <FAQs
+        page="Dedicated Servers"
+        questions={[
+          {
+            id: 1,
+            question: "What is a dedicated server?",
+            answer:
+              "A dedicated server is a physical server entirely reserved for your use. Unlike shared hosting, all CPU, RAM, storage, and bandwidth are dedicated to your website or applications, ensuring maximum performance, security, and customization.",
+          },
+          {
+            id: 2,
+            question: "Who should use a dedicated server?",
+            answer:
+              "Businesses and developers who need high performance, full control, and better security should use a dedicated server. It’s ideal for large websites, applications, and enterprises with heavy traffic.",
+          },
+          {
+            id: 3,
+            question:
+              "What is the difference between a VPS and a dedicated server?",
+            answer:
+              "A VPS (Virtual Private Server) shares physical hardware with other VPS instances, but has dedicated resources virtually. A dedicated server gives you the entire physical server without sharing.",
+          },
+          {
+            id: 4,
+            question: "Can I customize my dedicated server?",
+            answer:
+              "Yes, you can configure CPU, RAM, storage, and software based on your exact requirements. Dedicated servers are fully customizable.",
+          },
+          {
+            id: 5,
+            question: "Do you manage the server for me?",
+            answer:
+              "We offer both managed and unmanaged plans. Managed means we handle maintenance, updates, and monitoring; unmanaged gives you full control.",
+          },
+          {
+            id: 6,
+            question: "What security features are included?",
+            answer:
+              "We provide DDoS protection, firewalls, regular security patches, and optional monitoring to ensure your server stays safe.",
+          },
+          {
+            id: 7,
+            question: "How reliable are your dedicated servers?",
+            answer:
+              "Our servers have a 99.9% uptime guarantee, enterprise-grade hardware, and redundant network connections for maximum reliability.",
+          },
+          {
+            id: 8,
+            question: "Can I upgrade my dedicated server later?",
+            answer:
+              "Yes, you can scale your hardware resources by upgrading storage, RAM, or CPU depending on your growing needs.",
+          },
+          {
+            id: 9,
+            question: "Do you provide backups?",
+            answer:
+              "We offer automated backup options that can be scheduled daily, weekly, or on demand, ensuring your data is safe.",
+          },
+          {
+            id: 10,
+            question: "Is technical support available?",
+            answer:
+              "Yes, our technical support team is available 24/7 via chat, email, or phone to assist with any server-related issues.",
+          },
+        ]}
+      />
       <Footer />
     </Container>
   );

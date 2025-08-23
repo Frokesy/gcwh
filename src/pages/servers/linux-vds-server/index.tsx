@@ -176,7 +176,53 @@ const LinuxVDSServer = () => {
       </div>
       <ServerLocation />
       <Testimonials />
-      <FAQs />
+      <FAQs
+        page="Linux VDS Server"
+        questions={[
+          {
+            id: 1,
+            question: "What is a Linux VDS server?",
+            answer:
+              "A Linux VDS (Virtual Dedicated Server) is a type of hosting where a physical server is partitioned into fully isolated virtual machines, each with dedicated resources like CPU, RAM, and storage. Unlike shared hosting, you get guaranteed performance, full control, and the flexibility of running Linux distributions of your choice.",
+          },
+          {
+            id: 2,
+            question: "How is a VDS different from a VPS?",
+            answer:
+              "A VPS (Virtual Private Server) usually shares some resources at the hypervisor level, while a VDS offers stronger isolation and guaranteed resources closer to what you’d get on a dedicated server. In short, a VDS provides more consistent performance and reliability compared to a VPS.",
+          },
+          {
+            id: 3,
+            question: "Who should use a Linux VDS server?",
+            answer:
+              "Linux VDS servers are ideal for businesses, developers, and organizations that need high performance, root-level control, and reliability. They’re perfect for hosting large websites, applications, game servers, e-commerce platforms, or projects with heavy traffic and security needs.",
+          },
+          {
+            id: 4,
+            question: "Which Linux distributions are available?",
+            answer:
+              "We support a wide range of Linux distributions, including Ubuntu, Debian, CentOS, Fedora, AlmaLinux, and Rocky Linux. You can choose the one that best fits your technical requirements or familiarity.",
+          },
+          {
+            id: 5,
+            question: "Do I get full root access?",
+            answer:
+              "Yes. Every Linux VDS server comes with full root (administrator) access, giving you complete control over the operating system, software installations, and server configurations.",
+          },
+          {
+            id: 6,
+            question: "Can I scale my Linux VDS server?",
+            answer:
+              "Absolutely. You can upgrade your CPU, RAM, and storage as your needs grow. Scaling is seamless, so you can adapt your server resources without downtime.",
+          },
+          {
+            id: 7,
+            question: "Is it secure?",
+            answer:
+              "Yes. Linux VDS hosting is highly secure thanks to the Linux OS security model and the isolated nature of virtual dedicated servers. In addition, we provide firewalls, DDoS protection, regular patches, and optional managed security services to safeguard your server.",
+          },
+        ]}
+      />
       <Footer />
     </Container>
   );
