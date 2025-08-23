@@ -13,6 +13,7 @@ import EmailHosting from "./pages/hosting/email-hosting";
 import WordpressHosting from "./pages/hosting/wordpress-hosting";
 import LitespeedHosting from "./pages/hosting/litespeed-hosting";
 import RegisterDomain from "./pages/domains/register";
+import TransferDomain from "./pages/domains/transfer";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -35,6 +36,7 @@ const App = () => {
 
     //domain routes
     { path: "/domain/register-domain", element: <RegisterDomain /> },
+    { path: "/domain/transfer-domain", element: <TransferDomain /> },
   ]);
 
   return (
