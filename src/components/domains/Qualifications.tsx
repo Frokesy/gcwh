@@ -56,7 +56,7 @@ const Qualifications = () => {
             </div>
 
             <div
-              className={`${item.id % 2 === 0 ? "items-end justify-start mr-4 lg:mr-0" : "items-end justify-end ml-4 lg:ml-0"} flex lg;w-[50%] h-[370px] lg:mt-0 mt-10`}
+              className={`${item.id % 2 === 0 ? "items-end justify-start mr-4 lg:mr-0" : "items-end justify-end ml-4 lg:ml-0"} flex lg:w-[50%] h-[370px] lg:mt-0 mt-10`}
               style={{ backgroundColor: item.imgTheme }}
             >
               <img
