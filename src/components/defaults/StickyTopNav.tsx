@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { CaretDown, HamburgerIcon } from "../svgs/Icons";
 import { useState } from "react";
 import ServersDropdown from "../dropdowns/ServersDropdown";
+import HostingDropdown from "../dropdowns/HostingDropdown";
 
 const StickyTopNav = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -70,6 +71,9 @@ const StickyTopNav = () => {
                 </button>
                 {item.label === "Servers" && activeDropdown === "Servers" && (
                   <ServersDropdown />
+                )}
+                {item.label === "Hosting" && activeDropdown === "Hosting" && (
+                  <HostingDropdown />
                 )}
               </div>
             );
