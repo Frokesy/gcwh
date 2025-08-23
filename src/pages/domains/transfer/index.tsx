@@ -37,7 +37,7 @@ const TransferDomain = () => {
             <div className="bg-[#12214D] text-[#fff] font-semibold py-2 px-4 rounded-full">
               <span>Transfer Domain</span>
             </div>
-            <h2 className="lg:text-[60px] text-[30px] lg:text-center lg:w-[60%] font-semibold">
+            <h2 className="lg:text-[60px] text-[30px] lg:text-center lg:w-[70%] font-semibold">
               Move your domain with ease—fast, secure, and hassle-free.
             </h2>
             <p className="lg:text-[20px] text-gray-600 lg:w-[60%] mx-auto lg:text-center">
