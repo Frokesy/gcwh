@@ -23,7 +23,7 @@ const ManagedVPSServer = () => {
           <div className="lg:w-[50%]">
             <div className="flex">
               <div className="bg-[#12214D] text-[#fff] font-semibold py-2 px-4 rounded-full">
-                <span>Manages VPS server</span>
+                <span>Managed VPS server</span>
               </div>
             </div>
             <h2 className="text-gray-900 lg:text-[60px] text-[30px] mt-3 font-semibold">
@@ -71,7 +71,11 @@ const ManagedVPSServer = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/gifs/managed-vps.gif" alt="managed-vps" />
+            <img
+              src="/assets/gifs/managed-vps.gif"
+              alt="managed-vps"
+              className="w-[100%]"
+            />
           </div>
         </div>
       </div>

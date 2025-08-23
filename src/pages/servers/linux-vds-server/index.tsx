@@ -73,7 +73,11 @@ const LinuxVDSServer = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/gifs/linux.gif" alt="linux" />
+            <img
+              src="/assets/gifs/linux.gif"
+              alt="linux"
+              className="w-[100%]"
+            />
           </div>
         </div>
       </div>

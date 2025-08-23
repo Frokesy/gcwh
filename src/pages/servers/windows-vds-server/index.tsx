@@ -72,7 +72,11 @@ const WindowsVDSServer = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/gifs/windows.gif" alt="windows" />
+            <img
+              src="/assets/gifs/windows.gif"
+              alt="windows"
+              className="w-[100%]"
+            />
           </div>
         </div>
       </div>
