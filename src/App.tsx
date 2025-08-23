@@ -15,6 +15,7 @@ import LitespeedHosting from "./pages/hosting/litespeed-hosting";
 import RegisterDomain from "./pages/domains/register";
 import TransferDomain from "./pages/domains/transfer";
 import WhoisLookup from "./pages/domains/whois-lookup";
+import DomainPrices from "./pages/domains/prices";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -39,6 +40,7 @@ const App = () => {
     { path: "/domain/register-domain", element: <RegisterDomain /> },
     { path: "/domain/transfer-domain", element: <TransferDomain /> },
     { path: "/domain/whois-lookup", element: <WhoisLookup /> },
+    { path: "/domain/domain-prices", element: <DomainPrices /> },
   ]);
 
   return (
