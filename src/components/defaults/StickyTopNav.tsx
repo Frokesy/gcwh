@@ -3,6 +3,7 @@ import { CaretDown, HamburgerIcon } from "../svgs/Icons";
 import { useState } from "react";
 import ServersDropdown from "../dropdowns/ServersDropdown";
 import HostingDropdown from "../dropdowns/HostingDropdown";
+import DomainDropdown from "../dropdowns/DomainDropdown";
 
 const StickyTopNav = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -74,6 +75,9 @@ const StickyTopNav = () => {
                 )}
                 {item.label === "Hosting" && activeDropdown === "Hosting" && (
                   <HostingDropdown />
+                )}
+                {item.label === "Domain" && activeDropdown === "Domain" && (
+                  <DomainDropdown />
                 )}
               </div>
             );

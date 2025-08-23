@@ -20,7 +20,7 @@ const HostingDropdown = () => {
       id: 2,
       title: "Wordpress hosting",
       link: "/hosting/wordpress-hosting",
-      desc: "RWordPress hosting for fast, secure, and hassle-free websites.",
+      desc: "WordPress hosting for fast, secure, and hassle-free websites.",
       icon: <WordpressHostingIcon />,
     },
     {
