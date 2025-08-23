@@ -71,7 +71,11 @@ const LitespeedHosting = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/gifs/litespeed.gif" alt="litespeed-hosting" />
+            <img
+              src="/assets/gifs/litespeed.gif"
+              alt="litespeed-hosting"
+              className="w-[100%]"
+            />
           </div>
         </div>
       </div>

@@ -71,7 +71,11 @@ const WordpressHosting = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/wordpress-hosting.png" alt="wordpress-hosting" />
+            <img
+              src="/assets/wordpress-hosting.png"
+              alt="wordpress-hosting"
+              className="w-[100%] h-[80%]"
+            />
           </div>
         </div>
       </div>

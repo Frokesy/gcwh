@@ -72,7 +72,11 @@ const WebHosting = () => {
           </div>
 
           <div className="lg:w-[45%]">
-            <img src="/assets/web-hosting.png" alt="web-hosting" />
+            <img
+              src="/assets/web-hosting.png"
+              alt="web-hosting"
+              className="w-[100%] h-[80%]"
+            />
           </div>
         </div>
       </div>
