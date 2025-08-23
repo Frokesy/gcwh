@@ -34,7 +34,7 @@ const Testimonials = () => {
   ];
   return (
     <div className="lg:py-20 py-10 bg-[#fff]">
-      <div className="mt-10 w-[90vw] mx-auto py-10 flex flex-col space-y-3 items-center justify-center">
+      <div className="mt-10 w-[90vw] mx-auto flex flex-col space-y-3 items-center justify-center">
         <div className="bg-[#E6E6FA] text-[#05038E] font-semibold py-2 px-4 rounded-full">
           <span>Testimonials</span>
         </div>

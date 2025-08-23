@@ -12,6 +12,7 @@ import WebHosting from "./pages/hosting/web-hosting";
 import EmailHosting from "./pages/hosting/email-hosting";
 import WordpressHosting from "./pages/hosting/wordpress-hosting";
 import LitespeedHosting from "./pages/hosting/litespeed-hosting";
+import RegisterDomain from "./pages/domains/register";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -31,6 +32,9 @@ const App = () => {
     { path: "/hosting/email-hosting", element: <EmailHosting /> },
     { path: "/hosting/wordpress-hosting", element: <WordpressHosting /> },
     { path: "/hosting/litespeed-hosting", element: <LitespeedHosting /> },
+
+    //domain routes
+    { path: "/domain/register-domain", element: <RegisterDomain /> },
   ]);
 
   return (
