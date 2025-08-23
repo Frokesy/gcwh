@@ -6,7 +6,7 @@ import Testimonials from "../../components/home/Testimonials";
 const BuildWebsite = () => {
   return (
     <Container>
-      <div className="bg-[url('/assets/bg-gradient.svg')] mt-10 bg-cover lg:pt-[15vh] pt-20 bg-no-repeat lg:min-h-[80vh] min-h-[70vh] relative">
+      <div className="bg-[url('/assets/bg-gradient.svg')] mt-10 bg-cover lg:pt-[15vh] py-20 bg-no-repeat min-h-[70vh] relative">
         <div className="flex flex-col items-center space-y-4 lg:w-[60%] pt-10 mx-auto text-center">
           <h2 className="lg:text-[60px] text-[30px] font-semibold">
             Get your website up and running with just a click!

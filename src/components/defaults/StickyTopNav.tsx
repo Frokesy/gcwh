@@ -4,9 +4,12 @@ import { useState } from "react";
 import ServersDropdown from "../dropdowns/ServersDropdown";
 import HostingDropdown from "../dropdowns/HostingDropdown";
 import DomainDropdown from "../dropdowns/DomainDropdown";
+import { AnimatePresence, motion } from "framer-motion";
+import Drawer from "./Drawer";
 
 const StickyTopNav = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const navItems = [
     { label: "Build website", href: "/build-website" },
@@ -23,7 +26,7 @@ const StickyTopNav = () => {
   return (
     <div className="fixed w-full z-50">
       <div className="lg:w-[90vw] mx-auto bg-[#fff] px-6 lg:px-10 lg:py-4 py-3 flex items-center justify-between lg:rounded-full shadow-lg lg:mt-6">
-        <div className="flex items-center space-x-2 lg:space-x-3">
+        <NavLink to="/" className="flex items-center space-x-2 lg:space-x-3">
           <img
             src="/assets/logo.svg"
             alt="Logo"
@@ -32,7 +35,7 @@ const StickyTopNav = () => {
           <h2 className="lg:text-[20px] text-[15px]">
             GOATClouds technologies
           </h2>
-        </div>
+        </NavLink>
 
         <div className="lg:flex hidden items-center space-x-10">
           {navItems.map((item, index) => {
@@ -84,10 +87,27 @@ const StickyTopNav = () => {
           })}
         </div>
 
-        <div className="lg:hidden">
+        <div
+          className="lg:hidden cursor-pointer"
+          onClick={() => setIsDrawerOpen(true)}
+        >
           <HamburgerIcon />
         </div>
       </div>
+      <AnimatePresence>
+        <motion.div
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "100%" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className=""
+        >
+          <Drawer
+            isOpen={isDrawerOpen}
+            closeDrawer={() => setIsDrawerOpen(false)}
+          />
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };
