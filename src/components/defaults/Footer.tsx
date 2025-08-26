@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Facebook, GitHub, LinkedIn, Twitter } from "../svgs/Icons";
 
 const Footer = () => {
@@ -21,17 +22,17 @@ const Footer = () => {
               in the world
             </span>
 
-            <div className="flex flex-col mt-4">
+            {/* <div className="flex flex-col mt-4">
               <h2>Website builder</h2>
               <div className="mt-4">
                 <button className="bg-[#182A62] text-white px-6 py-2 text-[16px] font-semibold rounded-lg">
                   Build your website now
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="lg:w-[60%] flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
+          <div className="lg:w-[30%] flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
             {/* <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Server</h2>
               {[
@@ -51,13 +52,17 @@ const Footer = () => {
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Hosting</h2>
               {["DirectAdmin Shared Hosting"].map((item, index) => (
-                <span key={index} className="text-[16px] font-semibold">
+                <NavLink
+                  to="/hosting/shared-hosting"
+                  key={index}
+                  className="text-[16px] font-semibold"
+                >
                   {item}
-                </span>
+                </NavLink>
               ))}
             </div>
 
-            <div className="flex flex-col space-y-4">
+            {/* <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Domain</h2>
               {[
                 "Register domain",
@@ -69,7 +74,7 @@ const Footer = () => {
                   {item}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Legal</h2>

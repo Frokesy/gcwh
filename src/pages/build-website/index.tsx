@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Container from "../../components/defaults/Container";
 import Footer from "../../components/defaults/Footer";
 import ScrollFeatures from "../../components/defaults/ScrollFeatures";
@@ -23,7 +24,7 @@ const BuildWebsite = () => {
             data-aos="fade-up"
             className="bg-[#182A62] text-white px-6 py-2 text-[20px] font-semibold rounded-lg mt-10"
           >
-            Create website
+            <NavLink to="/">Create website</NavLink>
           </button>
         </div>
 
