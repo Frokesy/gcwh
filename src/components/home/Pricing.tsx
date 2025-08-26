@@ -11,7 +11,6 @@ type PricingCategory =
 
 const buttonItems: PricingCategory[] = [
   "Web hosting",
-  "Email hosting",
   "Wordpress hosting",
   "LiteSpeed hosting",
 ];

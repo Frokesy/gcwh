@@ -17,6 +17,7 @@ import TransferDomain from "./pages/domains/transfer";
 import WhoisLookup from "./pages/domains/whois-lookup";
 import DomainPrices from "./pages/domains/prices";
 import Cart from "./pages/cart";
+import SharedHosting from "./pages/hosting/shared-hosting";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -37,6 +38,7 @@ const App = () => {
     { path: "/hosting/email-hosting", element: <EmailHosting /> },
     { path: "/hosting/wordpress-hosting", element: <WordpressHosting /> },
     { path: "/hosting/litespeed-hosting", element: <LitespeedHosting /> },
+    { path: "/hosting/shared-hosting", element: <SharedHosting /> },
 
     //domain routes
     { path: "/domain/register-domain", element: <RegisterDomain /> },

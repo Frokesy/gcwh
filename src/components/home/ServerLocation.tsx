@@ -47,7 +47,7 @@ const ServerLocation = () => {
             See where our servers are strategically located to deliver fast,
             secure, and reliable connections—no matter where your visitors are.
           </p>
-          <div className="lg:w-[100%] w-[95vw] mt-10 lg:bg-[#fff] bg-[#ccc] lg:p-0 p-3">
+          <div className="lg:w-[100%] w-[95vw] mt-10 lg:p-0 p-3">
             <img
               src="/assets/map.png"
               alt="map"

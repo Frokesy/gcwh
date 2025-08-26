@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { GreenTick } from "../svgs/Icons";
 
 interface PricingCardProps {
@@ -5,6 +6,7 @@ interface PricingCardProps {
   desc: string;
   category?: string;
   mostPopular?: boolean;
+  link?: string;
   price: string;
   benefits: string[];
 }
@@ -14,6 +16,7 @@ const PricingCard = ({
   desc,
   price,
   benefits,
+  link,
   mostPopular,
 }: PricingCardProps) => {
   return (
@@ -32,7 +35,9 @@ const PricingCard = ({
         <span className="text-[#333] text-[12px]">/mo</span>
       </div>
       <button className="bg-[#182A62] text-white px-6 py-2 w-[100%] mt-6 text-[16px] font-semibold rounded-lg">
-        Choose {type}
+        <NavLink to={link as string} target="_blank">
+          Choose {type}
+        </NavLink>
       </button>
 
       <div className="mt-6 flex flex-col space-y-3">

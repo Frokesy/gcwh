@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:w-[60%] flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
-            <div className="flex flex-col space-y-4">
+            {/* <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Server</h2>
               {[
                 "Dedicated server",
@@ -46,16 +46,11 @@ const Footer = () => {
                   {item}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Hosting</h2>
-              {[
-                "Web hosting",
-                "Litespeed hosting",
-                "Email hosting",
-                "Wordpress",
-              ].map((item, index) => (
+              {["DirectAdmin Shared Hosting"].map((item, index) => (
                 <span key={index} className="text-[16px] font-semibold">
                   {item}
                 </span>

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import {
-  EmailHostingIcon,
   LitespeedHostingIcon,
   WebHostingIcon,
   WordpressHostingIcon,
@@ -23,13 +22,13 @@ const HostingDropdown = () => {
       desc: "WordPress hosting for fast, secure, and hassle-free websites.",
       icon: <WordpressHostingIcon />,
     },
-    {
-      id: 3,
-      title: "Email hosting",
-      link: "/hosting/email-hosting",
-      desc: "Professional, secure, and reliable custom email for your business. ",
-      icon: <EmailHostingIcon />,
-    },
+    // {
+    //   id: 3,
+    //   title: "Email hosting",
+    //   link: "/hosting/email-hosting",
+    //   desc: "Professional, secure, and reliable custom email for your business. ",
+    //   icon: <EmailHostingIcon />,
+    // },
     {
       id: 4,
       title: "LiteSpeed hosting",
