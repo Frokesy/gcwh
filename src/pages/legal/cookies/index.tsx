@@ -3,16 +3,13 @@ import Container from "../../../components/defaults/Container";
 import { UpdatedIcon } from "../../../components/svgs/Icons";
 import Footer from "../../../components/defaults/Footer";
 
-const PrivacyPolicy = () => {
+const CookiesPolicy = () => {
   const [activeToc, setActiveToc] = useState<string>("Services provided");
   const toc = [
-    "Information we collect",
-    "How we use your data",
-    "Data Sharing",
-    "Data Security",
-    "Your rights",
-    "Data Retention",
-    "Updates",
+    "What are Cookies?",
+    "Types of Cookies we use",
+    "Third-Party Cookies",
+    "Managing Cookies",
   ];
   return (
     <Container>
@@ -28,10 +25,11 @@ const PrivacyPolicy = () => {
             data-aos="fade-down"
             className="lg:text-[60px] text-[30px] font-semibold"
           >
-            Privacy Policy
+            Cookies Policy
           </h2>
           <p data-aos="fade-up" className="text-gray-900 lg:text-[24px]">
-            Your privacy matters to us. Here’s how we handle your personal data
+            We use cookies to enhance your experience. Here’s what you need to
+            know:{" "}
           </p>
         </div>
       </div>
@@ -63,21 +61,12 @@ const PrivacyPolicy = () => {
                 <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
                   1
                 </div>
-                <h2 className="text-[20px] font-semibold">
-                  Information we collect
-                </h2>
+                <h2 className="text-[20px] font-semibold">What Are Cookies</h2>
               </div>
-              <div className="flex flex-col space-y-1">
-                <p className="text-[#667085]">
-                  - Personal Info: Name, email, billing address, phone number.
-                </p>
-                <p className="text-[#667085]">
-                  - Technical Info: IP address, browser type, usage logs.
-                </p>
-                <p className="text-[#667085]">
-                  - Payment Info: Collected via secure third-party processors.
-                </p>
-              </div>
+              <p className="text-[#667085]">
+                Small files stored on your device that help us recognize your
+                preferences and improve navigation.{" "}
+              </p>
             </div>
             <div className="flex flex-col space-y-3 p-4 border border-[#ccc] rounded-xl">
               <div className="flex items-center space-x-3">
@@ -85,22 +74,22 @@ const PrivacyPolicy = () => {
                   2
                 </div>
                 <h2 className="text-[20px] font-semibold">
-                  How we use your data
+                  Types of Cookies we use
                 </h2>
               </div>
               <div className="flex flex-col space-y-1">
                 <p className="text-[#667085]">
-                  - Deliver and manage our services.
+                  - Essential: Necessary for login and account access.
                 </p>
                 <p className="text-[#667085]">
-                  - Process billing and account verification.
+                  - Performance: Help us analyze site usage and improve
+                  features.
                 </p>
                 <p className="text-[#667085]">
-                  - Send service alerts, updates, and optional marketing
-                  messages.
+                  - Functional: Remember preferences like language or timezone.
                 </p>
                 <p className="text-[#667085]">
-                  - Improve our offerings and website experience.
+                  - Marketing: Manage and personalize advertising initiatives.
                 </p>
               </div>
             </div>
@@ -109,12 +98,13 @@ const PrivacyPolicy = () => {
                 <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
                   3
                 </div>
-                <h2 className="text-[20px] font-semibold">Data Sharing</h2>
+                <h2 className="text-[20px] font-semibold">
+                  Third-Party Cookies
+                </h2>
               </div>
               <p className="text-[#667085]">
-                We do not sell your personal data. We may share data with
-                trusted partners (e.g., registrars, billing systems) under
-                strict privacy terms.
+                We may allow third-party cookies (e.g., analytics tools) to help
+                us understand and optimize site usage.
               </p>
             </div>
             <div className="flex flex-col space-y-3 p-4 border border-[#ccc] rounded-xl">
@@ -122,47 +112,11 @@ const PrivacyPolicy = () => {
                 <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
                   4
                 </div>
-                <h2 className="text-[20px] font-semibold">Data Security</h2>
+                <h2 className="text-[20px] font-semibold">Managing Cookies</h2>
               </div>
               <p className="text-[#667085]">
-                We utilize encryption, firewalls, and strict access controls to
-                protect your data.
-              </p>
-            </div>
-            <div className="flex flex-col space-y-3 p-4 border border-[#ccc] rounded-xl">
-              <div className="flex items-center space-x-3">
-                <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
-                  5
-                </div>
-                <h2 className="text-[20px] font-semibold">Your Rights</h2>
-              </div>
-              <p className="text-[#667085]">
-                You may access, update, or delete your information. You can opt
-                out of marketing communications at any time.
-              </p>
-            </div>
-            <div className="flex flex-col space-y-3 p-4 border border-[#ccc] rounded-xl">
-              <div className="flex items-center space-x-3">
-                <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
-                  6
-                </div>
-                <h2 className="text-[20px] font-semibold">Data Retention</h2>
-              </div>
-              <p className="text-[#667085]">
-                We retain your data only as long as needed to provide services,
-                satisfy legal obligations, or resolve disputes.
-              </p>
-            </div>
-            <div className="flex flex-col space-y-3 p-4 border border-[#ccc] rounded-xl">
-              <div className="flex items-center space-x-3">
-                <div className="text-[#fff] bg-[#1A2E6C] w-[40px] h-[40px] flex justify-center items-center rounded-full text-[20px] font-semibold">
-                  7
-                </div>
-                <h2 className="text-[20px] font-semibold">Updates</h2>
-              </div>
-              <p className="text-[#667085]">
-                We may update this policy; significant changes will be
-                communicated to you.
+                You can manage or block cookies via browser settings. Disabling
+                certain cookies may impair website functionality.
               </p>
             </div>
           </div>
@@ -186,4 +140,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default CookiesPolicy;

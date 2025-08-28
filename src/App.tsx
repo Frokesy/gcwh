@@ -19,6 +19,8 @@ import DomainPrices from "./pages/domains/prices";
 import Cart from "./pages/cart";
 import SharedHosting from "./pages/hosting/shared-hosting";
 import TermsOfService from "./pages/legal/terms";
+import CookiesPolicy from "./pages/legal/cookies";
+import PrivacyPolicy from "./pages/legal/privacy";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -49,6 +51,8 @@ const App = () => {
 
     //legal routes
     { path: "/legal/terms", element: <TermsOfService /> },
+    { path: "/legal/privacy", element: <PrivacyPolicy /> },
+    { path: "/legal/cookies", element: <CookiesPolicy /> },
   ]);
 
   return (
