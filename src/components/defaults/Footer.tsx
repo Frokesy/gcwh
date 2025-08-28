@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-2 lg:w-[30%]">
             <div className="flex items-center space-x-2 lg:space-x-3">
               <img
-                src="/assets/logo.svg"
+                src="/assets/logo-black.png"
                 alt="Logo"
                 className="w-[32px] h-[32px] lg:w-[48px] lg:h-[48px]"
               />
@@ -20,9 +20,6 @@ const Footer = () => {
             <span className="mt-4">
               Design amazing digital experiences that create more satisfaction
               in the world
-            </span>
-            <span className="mt-4">
-              Block G7 Arisekola shopping complex Bodija Ibadan, Oyo State.
             </span>
 
             {/* <div className="flex flex-col mt-4">
@@ -35,7 +32,7 @@ const Footer = () => {
             </div> */}
           </div>
 
-          <div className="lg:w-[30%] flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
+          <div className="lg:w-[60%] flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
             {/* <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Server</h2>
               {[
@@ -51,6 +48,20 @@ const Footer = () => {
                 </span>
               ))}
             </div> */}
+            <div className="flex flex-col space-y-4">
+              <h2 className="text-[#98A2B3] text-[14px]">
+                Contact Information
+              </h2>
+              <span className="w-[60%]">
+                Address: Block G7 Arisekola shopping complex Bodija Ibadan, Oyo
+                State.
+              </span>
+              <span className="">
+                Phone Number: +234 707 742 3940 <br /> Available from
+                09:00-18:00 GMT
+              </span>
+              <span className="">Email: support@goatclouds.com</span>
+            </div>
 
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Hosting</h2>
@@ -73,7 +84,6 @@ const Footer = () => {
                 </NavLink>
               ))}
             </div>
-
             {/* <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Domain</h2>
               {[

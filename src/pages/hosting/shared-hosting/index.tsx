@@ -76,7 +76,7 @@ const SharedHosting = () => {
     },
     {
       type: "Advanced",
-      price: "$3.50",
+      price: "$3.10",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=15",
       benefits: [
         "Free SitePad sitebuilder",

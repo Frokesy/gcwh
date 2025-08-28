@@ -74,7 +74,7 @@ const FAQs = ({ page, questions }: FaqsProps) => {
           our friendly team.
         </p>
         <button className="bg-[#182A62] text-white px-6 py-2 text-[16px] font-semibold rounded-lg">
-          Get in touch
+          <a href="mailto:support@goatclouds.com">Get in touch</a>
         </button>
       </div>
     </div>

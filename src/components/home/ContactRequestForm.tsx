@@ -37,7 +37,7 @@ const ContactRequestForm = () => {
           Authorization: `Bearer ${import.meta.env.VITE_PLUNK_SECRET}`,
         },
         body: JSON.stringify({
-          to: "ayanfeoluwaakindele24@gmail.com",
+          to: "custombuild@goatclouds.com",
           subject: "New Build Request",
           body: emailHtml,
         }),
