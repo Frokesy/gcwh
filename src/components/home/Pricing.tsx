@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const directAdminPlans = [
   {
-    type: "Ultra Lite package",
+    type: "Ultra Lite Hosting",
     price: "$1.50",
     url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=5",
     benefits: [
@@ -22,7 +22,7 @@ const directAdminPlans = [
     ],
   },
   {
-    type: "Lite Package",
+    type: "Lite Hosting",
     price: "$2.50",
     url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=7",
     mostPopular: true,
@@ -41,7 +41,7 @@ const directAdminPlans = [
     ],
   },
   {
-    type: "Standard",
+    type: "Standard Hosting",
     price: "$2.99",
     url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=10",
     benefits: [

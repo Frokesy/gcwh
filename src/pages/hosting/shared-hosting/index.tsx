@@ -20,7 +20,7 @@ const SharedHosting = () => {
 
   const plans = [
     {
-      type: "Ultra Lite package",
+      type: "Ultra Lite Hosting",
       price: "$1.50",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=5",
       benefits: [
@@ -38,7 +38,7 @@ const SharedHosting = () => {
       ],
     },
     {
-      type: "Lite Package",
+      type: "Lite Hosting",
       price: "$2.50",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=7",
       mostPopular: true,
@@ -57,7 +57,7 @@ const SharedHosting = () => {
       ],
     },
     {
-      type: "Standard",
+      type: "Standard Hosting",
       price: "$2.99",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=10",
       benefits: [
@@ -75,7 +75,7 @@ const SharedHosting = () => {
       ],
     },
     {
-      type: "Advanced",
+      type: "Advanced Hosting",
       price: "$3.10",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=15",
       benefits: [
@@ -94,7 +94,7 @@ const SharedHosting = () => {
       ],
     },
     {
-      type: "Pro",
+      type: "Pro Hosting",
       price: "$3.70",
       url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=35",
       benefits: [
