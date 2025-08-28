@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { CaretDown } from "../svgs/Icons";
-import { useState } from "react";
+// import { CaretDown } from "../svgs/Icons";
+// import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import ServersDropdown from "../dropdowns/ServersDropdown";
-import HostingDropdown from "../dropdowns/HostingDropdown";
-import DomainDropdown from "../dropdowns/DomainDropdown";
+// import ServersDropdown from "../dropdowns/ServersDropdown";
+// import HostingDropdown from "../dropdowns/HostingDropdown";
+// import DomainDropdown from "../dropdowns/DomainDropdown";
 
 const Drawer = ({
   isOpen,
@@ -13,11 +13,11 @@ const Drawer = ({
   isOpen: boolean;
   closeDrawer: () => void;
 }) => {
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  // const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  const toggleDropdown = (name: string) => {
-    setActiveDropdown((prev) => (prev === name ? null : name));
-  };
+  // const toggleDropdown = (name: string) => {
+  //   setActiveDropdown((prev) => (prev === name ? null : name));
+  // };
 
   return (
     <AnimatePresence>
@@ -53,7 +53,7 @@ const Drawer = ({
               Build website
             </NavLink>
 
-            <div>
+            {/* <div>
               <div
                 onClick={() => toggleDropdown("Servers")}
                 className="flex justify-between items-center cursor-pointer"
@@ -70,9 +70,9 @@ const Drawer = ({
               <AnimatePresence>
                 {activeDropdown === "Servers" && <ServersDropdown />}
               </AnimatePresence>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <div
                 onClick={() => toggleDropdown("Hosting")}
                 className="flex justify-between items-center cursor-pointer"
@@ -89,9 +89,9 @@ const Drawer = ({
               <AnimatePresence>
                 {activeDropdown === "Hosting" && <HostingDropdown />}
               </AnimatePresence>
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <div
                 onClick={() => toggleDropdown("Domain")}
                 className="flex justify-between items-center cursor-pointer"
@@ -108,18 +108,32 @@ const Drawer = ({
               <AnimatePresence>
                 {activeDropdown === "Domain" && <DomainDropdown />}
               </AnimatePresence>
-            </div>
+            </div> */}
 
-            <NavLink to="/cart" onClick={closeDrawer} className="block">
+            <NavLink to="/hosting/shared-hosting" className="block">
+              Hosting
+            </NavLink>
+            <NavLink
+              to="https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting"
+              className="block"
+            >
+              Domain
+            </NavLink>
+            <NavLink
+              to="https://clients.goatclouds.com/order/cart/index/DirectAdmin-Shared-hosting"
+              className="block"
+            >
               Cart
             </NavLink>
-            <NavLink to="#" onClick={closeDrawer} className="block">
+            <NavLink
+              to="https://clients.goatclouds.com/client/login/"
+              className="block"
+            >
               Log in
             </NavLink>
 
             <NavLink
-              to="#"
-              onClick={closeDrawer}
+              to="https://clients.goatclouds.com/order/main/index/register"
               className="bg-[#182A62] text-[#fff] px-6 py-3 text-center rounded-xl block hover:bg-[#c0050f]"
             >
               Sign up

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 import PricingCard from "../../../components/cards/PricingCard";
 import Container from "../../../components/defaults/Container";
 import FAQs from "../../../components/defaults/FAQs";
@@ -10,7 +10,6 @@ import {
   LeftArrow,
   RightArrow,
 } from "../../../components/svgs/Icons";
-import { motion, AnimatePresence } from "framer-motion";
 
 const SharedHosting = () => {
   const items = [
@@ -113,22 +112,38 @@ const SharedHosting = () => {
         "24/7 Active Support",
       ],
     },
+    {
+      type: "Goat X Ultra",
+      price: "$9.20",
+      url: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting/?group_id=2&pricing_id=29",
+      benefits: [
+        "Free SitePad sitebuilder",
+        "Unlimited NvmeSSD Storage",
+        "60 websites",
+        "Unlimited Email Accounts",
+        "40 subdomains",
+        "Unlimited MySQL Databases",
+        "5 FTP Accounts",
+        "Unlimited Bandwidth",
+        "Free Let's Encrypt SSL",
+        "Free weekly Backups",
+        "DirectAdmin Control Panel",
+        "24/7 Active Support",
+      ],
+    },
   ];
 
-  const [startIndex, setStartIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const handleNext = () => {
-    if (startIndex < plans.length - 3) {
-      setDirection(1);
-      setStartIndex(startIndex + 1);
+  const scrollNext = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
     }
   };
 
-  const handlePrev = () => {
-    if (startIndex > 0) {
-      setDirection(-1);
-      setStartIndex(startIndex - 1);
+  const scrollPrev = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
     }
   };
 
@@ -167,7 +182,7 @@ const SharedHosting = () => {
               <div className="flex items-center space-x-2">
                 <p className="text-[18px] text-gray-800">Starting from</p>
                 <div className="flex items-baseline">
-                  <h2 className="text-[30px] font-semibold">$2.99</h2>
+                  <h2 className="text-[30px] font-semibold">$1.50</h2>
                   <span className="text-[12px]">/mo</span>
                 </div>
               </div>
@@ -209,42 +224,30 @@ const SharedHosting = () => {
               DirectAdmin hosting plans & prices
             </h2>
             <div className="flex items-center space-x-4 mt-3 lg:mt-0 lg:space-x-10">
-              <button onClick={handlePrev} disabled={startIndex === 0}>
+              <button onClick={scrollPrev}>
                 <LeftArrow />
               </button>
-              <button
-                onClick={handleNext}
-                disabled={startIndex === plans.length - 3}
-              >
+              <button onClick={scrollNext}>
                 <RightArrow />
               </button>
             </div>
           </div>
-          <div className="mt-4 overflow-hidden relative">
-            <div className="w-full h-full">
-              <AnimatePresence initial={false} mode="wait">
-                <motion.div
-                  key={startIndex}
-                  initial={{ x: direction === 1 ? 100 : -100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: direction === 1 ? -100 : 100, opacity: 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="grid lg:grid-cols-3 grid-cols-1 w-full mt-6 gap-6"
-                >
-                  {plans.slice(startIndex, startIndex + 3).map((plan, idx) => (
-                    <PricingCard
-                      key={idx}
-                      type={plan.type}
-                      desc=""
-                      link={plan.url}
-                      price={plan.price}
-                      mostPopular={plan.mostPopular}
-                      benefits={plan.benefits}
-                    />
-                  ))}
-                </motion.div>
-              </AnimatePresence>
-            </div>
+
+          <div
+            ref={scrollRef}
+            className="pt-6 flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide"
+          >
+            {plans.map((plan, idx) => (
+              <PricingCard
+                key={idx}
+                type={plan.type}
+                desc=""
+                link={plan.url}
+                price={plan.price}
+                mostPopular={plan.mostPopular}
+                benefits={plan.benefits}
+              />
+            ))}
           </div>
         </div>
       </div>

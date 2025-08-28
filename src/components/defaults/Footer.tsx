@@ -21,6 +21,9 @@ const Footer = () => {
               Design amazing digital experiences that create more satisfaction
               in the world
             </span>
+            <span className="mt-4">
+              Block G7 Arisekola shopping complex Bodija Ibadan, Oyo State.
+            </span>
 
             {/* <div className="flex flex-col mt-4">
               <h2>Website builder</h2>
@@ -51,13 +54,22 @@ const Footer = () => {
 
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Hosting</h2>
-              {["DirectAdmin Shared Hosting"].map((item, index) => (
+              {[
+                {
+                  label: "DirectAdmin Shared Hosting",
+                  href: "/hosting/shared-hosting",
+                },
+                {
+                  label: "Domains",
+                  href: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting",
+                },
+              ].map((item, index) => (
                 <NavLink
-                  to="/hosting/shared-hosting"
+                  to={item.href}
                   key={index}
                   className="text-[16px] font-semibold"
                 >
-                  {item}
+                  {item.label}
                 </NavLink>
               ))}
             </div>
@@ -78,9 +90,13 @@ const Footer = () => {
 
             <div className="flex flex-col space-y-4">
               <h2 className="text-[#98A2B3] text-[14px]">Legal</h2>
-              {["Terms", "Privacy", "Cookies", "Contact"].map((item, index) => (
+              {[
+                { label: "Terms", href: "/legal/terms" },
+                { label: "Privacy", href: "/legal/privacy" },
+                { label: "Cookies", href: "/legal/cookies" },
+              ].map((item, index) => (
                 <span key={index} className="text-[16px] font-semibold">
-                  {item}
+                  <NavLink to={item.href}>{item.label}</NavLink>
                 </span>
               ))}
             </div>

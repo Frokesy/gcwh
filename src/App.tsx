@@ -18,6 +18,7 @@ import WhoisLookup from "./pages/domains/whois-lookup";
 import DomainPrices from "./pages/domains/prices";
 import Cart from "./pages/cart";
 import SharedHosting from "./pages/hosting/shared-hosting";
+import TermsOfService from "./pages/legal/terms";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -45,6 +46,9 @@ const App = () => {
     { path: "/domain/transfer-domain", element: <TransferDomain /> },
     { path: "/domain/whois-lookup", element: <WhoisLookup /> },
     { path: "/domain/domain-prices", element: <DomainPrices /> },
+
+    //legal routes
+    { path: "/legal/terms", element: <TermsOfService /> },
   ]);
 
   return (

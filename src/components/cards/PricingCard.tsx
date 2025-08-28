@@ -21,10 +21,12 @@ const PricingCard = ({
 }: PricingCardProps) => {
   return (
     <div
-      className={`${mostPopular ? "border-4 border-[#1A2E6C]" : "border border-[#ccc]"} relative rounded-2xl p-6`}
+      className={`${
+        mostPopular ? "border-4 border-[#1A2E6C]" : "border border-[#ccc]"
+      } relative min-w-[300px] md:min-w-[350px] lg:min-w-[380px] rounded-2xl p-6 flex-shrink-0`}
     >
       {mostPopular && (
-        <button className="bg-[#0B132D] px-3 py-1 font-semibold rounded-full text-white text-[10px] absolute -top-3 right-[40%]">
+        <button className="bg-[#0B132D] px-3 py-1 font-semibold rounded-full text-white text-[10px] absolute -top-3 left-1/2 -translate-x-1/2">
           Most Popular
         </button>
       )}
@@ -34,7 +36,7 @@ const PricingCard = ({
         <h1 className="text-[30px] font-semibold">{price}</h1>
         <span className="text-[#333] text-[12px]">/mo</span>
       </div>
-      <button className="bg-[#182A62] text-white px-6 py-2 w-[100%] mt-6 text-[16px] font-semibold rounded-lg">
+      <button className="bg-[#182A62] text-white px-6 py-2 w-full mt-6 text-[16px] font-semibold rounded-lg">
         <NavLink to={link as string} target="_blank">
           Choose {type}
         </NavLink>

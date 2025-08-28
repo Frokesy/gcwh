@@ -15,13 +15,20 @@ const StickyTopNav = () => {
     { label: "Build website", href: "/build-website" },
     // { label: "Servers" },
     { label: "Hosting", href: "/hosting/shared-hosting" },
-    // { label: "Domain" },
+    {
+      label: "Domain",
+      href: "https://clients.goatclouds.com/order/config/index/DirectAdmin-Shared-hosting",
+    },
     {
       label: "Cart",
       href: "https://clients.goatclouds.com/order/cart/index/DirectAdmin-Shared-hosting",
     },
     { label: "Log in", href: "https://clients.goatclouds.com/client/login/" },
-    { label: "Sign up", href: "#", button: true },
+    {
+      label: "Sign up",
+      href: "https://clients.goatclouds.com/order/main/index/register",
+      button: true,
+    },
   ];
   const toggleDropdown = (label: string) => {
     setActiveDropdown((prev) => (prev === label ? null : label));
